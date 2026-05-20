@@ -1,0 +1,29 @@
+C:\Users\Estuardo Castillo\source\repos\Ejemplo\bin\Debug\net10.0\Ejemplo.exe
+C:\Users\Estuardo Castillo\source\repos\Ejemplo\bin\Debug\net10.0\Ejemplo.deps.json
+C:\Users\Estuardo Castillo\source\repos\Ejemplo\bin\Debug\net10.0\Ejemplo.runtimeconfig.json
+C:\Users\Estuardo Castillo\source\repos\Ejemplo\bin\Debug\net10.0\Ejemplo.dll
+C:\Users\Estuardo Castillo\source\repos\Ejemplo\bin\Debug\net10.0\Ejemplo.pdb
+C:\Users\Estuardo Castillo\source\repos\Ejemplo\obj\Debug\net10.0\Ejemplo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Estuardo Castillo\source\repos\Ejemplo\obj\Debug\net10.0\Ejemplo.AssemblyInfoInputs.cache
+C:\Users\Estuardo Castillo\source\repos\Ejemplo\obj\Debug\net10.0\Ejemplo.AssemblyInfo.cs
+C:\Users\Estuardo Castillo\source\repos\Ejemplo\obj\Debug\net10.0\Ejemplo.csproj.CoreCompileInputs.cache
+C:\Users\Estuardo Castillo\source\repos\Ejemplo\obj\Debug\net10.0\Ejemplo.dll
+C:\Users\Estuardo Castillo\source\repos\Ejemplo\obj\Debug\net10.0\refint\Ejemplo.dll
+C:\Users\Estuardo Castillo\source\repos\Ejemplo\obj\Debug\net10.0\Ejemplo.pdb
+C:\Users\Estuardo Castillo\source\repos\Ejemplo\obj\Debug\net10.0\Ejemplo.genruntimeconfig.cache
+C:\Users\Estuardo Castillo\source\repos\Ejemplo\obj\Debug\net10.0\ref\Ejemplo.dll
+C:\Users\julian\source\repos\Lab--X3\Laboratorio--03\Laboratorio\bin\Debug\net10.0\Ejemplo.exe
+C:\Users\julian\source\repos\Lab--X3\Laboratorio--03\Laboratorio\bin\Debug\net10.0\Ejemplo.deps.json
+C:\Users\julian\source\repos\Lab--X3\Laboratorio--03\Laboratorio\bin\Debug\net10.0\Ejemplo.runtimeconfig.json
+C:\Users\julian\source\repos\Lab--X3\Laboratorio--03\Laboratorio\bin\Debug\net10.0\Ejemplo.dll
+C:\Users\julian\source\repos\Lab--X3\Laboratorio--03\Laboratorio\bin\Debug\net10.0\Ejemplo.pdb
+C:\Users\julian\source\repos\Lab--X3\Laboratorio--03\Laboratorio\obj\Debug\net10.0\Ejemplo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julian\source\repos\Lab--X3\Laboratorio--03\Laboratorio\obj\Debug\net10.0\Ejemplo.AssemblyInfoInputs.cache
+C:\Users\julian\source\repos\Lab--X3\Laboratorio--03\Laboratorio\obj\Debug\net10.0\Ejemplo.AssemblyInfo.cs
+C:\Users\julian\source\repos\Lab--X3\Laboratorio--03\Laboratorio\obj\Debug\net10.0\Ejemplo.csproj.CoreCompileInputs.cache
+C:\Users\julian\source\repos\Lab--X3\Laboratorio--03\Laboratorio\obj\Debug\net10.0\Ejemplo.sourcelink.json
+C:\Users\julian\source\repos\Lab--X3\Laboratorio--03\Laboratorio\obj\Debug\net10.0\Ejemplo.dll
+C:\Users\julian\source\repos\Lab--X3\Laboratorio--03\Laboratorio\obj\Debug\net10.0\refint\Ejemplo.dll
+C:\Users\julian\source\repos\Lab--X3\Laboratorio--03\Laboratorio\obj\Debug\net10.0\Ejemplo.pdb
+C:\Users\julian\source\repos\Lab--X3\Laboratorio--03\Laboratorio\obj\Debug\net10.0\Ejemplo.genruntimeconfig.cache
+C:\Users\julian\source\repos\Lab--X3\Laboratorio--03\Laboratorio\obj\Debug\net10.0\ref\Ejemplo.dll

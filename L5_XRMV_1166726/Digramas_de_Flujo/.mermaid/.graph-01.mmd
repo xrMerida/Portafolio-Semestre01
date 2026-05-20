@@ -1,0 +1,18 @@
+graph TB
+    BEGIN([INICIO])
+    END([FIN])
+
+    BEGIN --> outNumber[Ingrese un numero]@{shape: display}
+    outNumber --> varNumber[/numero/]
+    varNumber --> checkNumber{numero = 0}
+        checkNumber -- TRUE --> outNeutral
+        checkNumber -- FALSE --> checkPositive
+    
+    outNeutral[El numero es igual a 0]@{shape: display} --> END
+
+    checkPositive{numero > 0}
+        checkPositive --> outPositive
+        checkPositive --> outNegative
+
+    outPositive[El numero es positivo]@{shape: display} --> END
+    outNegative[El numero es negativo]@{shape: display} --> END

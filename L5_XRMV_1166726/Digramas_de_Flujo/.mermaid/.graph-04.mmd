@@ -1,0 +1,75 @@
+graph TB
+    BEGIN([INICIO])
+    END([FIN])
+
+    BEGIN --> outHoras[Ingrese el tiempo de su estadia en horas]@{shape: display}
+    outHoras --> varHoras[/horas/]
+    varHoras --> varCobro(cobro = horas * 10)
+    varCobro --> outCobro["Debe pagar {cobro}
+    Ingrese el/los billete/s "]@{shape: display}
+    outCobro --> varPago[/pago/]
+
+    varPago --> checkPago{pago < cobro}
+        checkPago -- FALSE --> checkPago2
+        checkPago -- TRUE --> outInvalid
+        
+
+    outInvalid[Pago Incompleto]@{shape: display} --> END
+
+    checkPago2{pago = cobro}
+        checkPago2 -- FALSE --> varChange
+        checkPago2 -- TRUE --> outNoChange
+        
+
+    outNoChange[Pago completo, sin cambio]@{shape: display} --> END
+    
+    varChange(cambio = pago - cobro)
+    varChange --> outChangeDisplay[Cambio de:]@{shape: display}
+
+    outChangeDisplay --> checkChange{cambio >= 100}
+        checkChange -- FALSE --> checkChange2
+        checkChange -- TRUE --> varDisplayChange
+        
+
+        varDisplayChange(cambioDisp = cambio / 100)--> varChange1
+        varChange1(cambio %= 100) --> outChange["{cambioDisp} billetes/s de 100"]@{shape: display}
+        outChange --> checkChange2
+
+    checkChange2{cambio >= 50}
+        checkChange2 -- TRUE --> varDisplayChange2
+        checkChange2 -- FALSE --> checkChange3
+
+        varDisplayChange2(cambioDisp = cambio / 50)--> varChange2
+        varChange2(cambio %= 50) --> outChange2["{cambioDisp} billetes/s de 50"]@{shape: display}
+        outChange2 --> checkChange3
+
+    checkChange3{cambio >= 20}
+        checkChange3 -- TRUE --> varDisplayChange3
+        checkChange3 -- FALSE --> checkChange4
+
+        varDisplayChange3(cambioDisp = cambio / 20)--> varChange3
+        varChange3(cambio %= 20) --> outChange3["{cambioDisp} billetes/s de 20"]@{shape: display}
+        outChange3 --> checkChange4
+
+    checkChange4{cambio >= 10}
+        checkChange4 -- TRUE --> varDisplayChange4
+        checkChange4 -- FALSE --> checkChange5
+
+        varDisplayChange4(cambioDisp = cambio / 10) --> varChange4
+        varChange4(cambio %= 10) --> outChange4["{cambioDisp} billetes/s de 10"]@{shape: display}
+        outChange4 --> checkChange5
+    
+    checkChange5{cambio >= 5}
+        checkChange5 -- TRUE --> varDisplayChange5
+        checkChange5 -- FALSE --> checkChange6
+
+        varDisplayChange5(cambioDisp = cambio / 5) --> varChange5
+        varChange5(cambio %= 5) --> outChange5["{cambioDisp} billetes/s de 5"]@{shape: display}
+        outChange5 --> checkChange6
+    
+    checkChange6{cambio >= 1}
+        checkChange6 -- TRUE --> outChange6
+        checkChange6 -- FALSE --> END
+
+        outChange6["{cambio} billetes/s de 1"]@{shape: display}
+        outChange6 --> END

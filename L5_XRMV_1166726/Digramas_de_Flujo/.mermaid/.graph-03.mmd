@@ -1,0 +1,46 @@
+graph TD
+    Start([INICIO]) --> 
+    InputIngreso[/Ingresar Ingreso Mensual/]@{ shape: display }
+    InputIngreso --> VarIngreso[/salario/]
+    
+    VarIngreso --> InputMulta[/"Tiene una multa? [S/N]"/]@{ shape: display }
+    InputMulta --> VarMultaAns[/multaAns/]
+    VarMultaAns --> CheckMultaAns{"multaAns = 's'"}
+
+    CheckMultaAns -- TRUE --> VarMulta1(multa = true)
+    CheckMultaAns -- FALSE --> CheckMultaAns2{multaAns = 'n'}
+    CheckMultaAns2 -- TRUE --> VarMulta2(multa = false)
+    CheckMultaAns2 -- FALSE --> Invalid["{multaAns} es invalido"]@{ shape: display }
+    Invalid --> END
+
+    VarMulta1 --> Check1
+    VarMulta2 --> Check1
+
+    Check1{salario > 12000}
+    Check1 -- TRUE --> arb6(arbitro = 150)
+    Check1 -- FALSE --> Check2{salario > 9000}
+    Check2 -- TRUE --> arb5(arbitro = 100)
+    Check2 -- FALSE --> Check3{salario > 6000}
+    Check3 -- TRUE --> arb4(arbitro = 75)
+    Check3 -- FALSE --> Check4{salario > 3000}
+    Check4 -- TRUE --> arb3(arbitro = 50)
+    Check4 -- FALSE --> Check5{salario > 1000}
+    Check5 -- TRUE --> arb2(arbitro = 15)
+    Check5 -- FALSE --> Check6{salario > 500}
+    Check6 -- TRUE --> arb1(arbitro = 10)
+
+    Check6 -- FALSE ----> CheckMulta
+    arb1 --> CheckMulta
+    arb2 --> CheckMulta
+    arb3 --> CheckMulta
+    arb4 --> CheckMulta
+    arb5 --> CheckMulta
+    arb6 --> CheckMulta
+
+    CheckMulta{multa}
+        CheckMulta -- TRUE --> MultaPago(arbitro = arbitro * 2)
+            MultaPago --> OutPago
+        CheckMulta -- FALSE --> OutPago
+
+    OutPago["Su pago sera de {arbitro}"]@{shape: display}
+    OutPago --> END([FIN])

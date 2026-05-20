@@ -1,0 +1,16 @@
+graph TB
+    BEGIN([INICIO])
+    END([FIN])
+
+    BEGIN --> askYear[Ingrese un año]@{ shape: display }
+    askYear --> varYear[/year/]
+    varYear --> checkYear
+
+    checkYear{"(year % 4 = 0
+    & year % 100 != 0)
+    | year % 400 = 0"}
+        checkYear -- TRUE --> outYes
+        checkYear -- FALSE --> outNot
+    
+    outYes[Es bisiesto]@{shape: display} --> END
+    outNot[No es bisiesto]@{shape: display} --> END
